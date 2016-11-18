@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.cocomeng.library.FunctionConfig;
 import com.cocomeng.library.GalleryFinal;
 import com.cocomeng.library.model.PhotoInfo;
 
@@ -28,10 +29,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
+        final FunctionConfig functionConfig = new FunctionConfig.Builder()
+                .setEnableEdit(true)
+                .setEnableCrop(true)
+                .setForceCrop(true)
+                .setForceCropEdit(false)
+                .setCropSquare(true)
+                .setEnableCamera(true)
+                .build();
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                GalleryFinal.openGalleryMuti(REQUEST_CODE_GALLERY, 9, onHanlderResultCallback, true);
+                GalleryFinal.openGallerySingle(REQUEST_CODE_GALLERY, functionConfig, onHanlderResultCallback, false);
             }
         });
     }

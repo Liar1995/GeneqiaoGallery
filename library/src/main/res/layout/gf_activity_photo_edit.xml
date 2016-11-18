@@ -98,14 +98,14 @@
         android:layout_weight="1"
         >
 
-        <cn.finalteam.galleryfinal.widget.zoonview.PhotoView
+        <com.cocomeng.library.widget.zoonview.PhotoView
             android:id="@+id/iv_source_photo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bg_gf_crop_texture"
             />
 
-        <cn.finalteam.galleryfinal.widget.crop.CropImageView
+        <com.cocomeng.library.widget.crop.CropImageView
             android:id="@+id/iv_crop_photo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -123,7 +123,7 @@
             android:visibility="gone"
             />
 
-        <cn.finalteam.galleryfinal.widget.FloatingActionButton
+        <com.cocomeng.library.widget.FloatingActionButton
             android:id="@+id/fab_crop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
             android:layout_height="1dp"
             android:background="#d2d2d7"
             />
-        <cn.finalteam.galleryfinal.widget.HorizontalListView
+        <com.cocomeng.library.widget.HorizontalListView
             android:id="@+id/lv_gallery"
             android:layout_width="match_parent"
             android:layout_height="100dp"
